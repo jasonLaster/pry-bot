@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+
+require 'pry-bot'
+PryBot::CLI.new.run
