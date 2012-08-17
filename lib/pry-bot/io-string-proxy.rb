@@ -60,7 +60,7 @@ module PryBot
       @obj.pos = @obj.size
       return string
     end
-      
+
   end
 
 end
