@@ -2,7 +2,7 @@ require 'pry-bot'
 
 class Foo
   def initialize
-    binding.pry_remote
+    binding.pry_bot
   end
 end
 
