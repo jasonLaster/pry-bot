@@ -6,7 +6,7 @@ module PryBot
     def self.run(object)
       shared_io = PryBot::SharedIO.new
       DRb.start_service 'druby://:9000', shared_io
-      
+
       # Startup PRY
       Pry.color = false
       Pry.pager = false
