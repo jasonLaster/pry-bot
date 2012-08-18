@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+require 'pry-bot'
+
+puts 'Starting DRb on port 9000'
+puts "Note: This is not exiting cleanly. You gotta be all, ^Z `kill -9 #$$`."
+PryBot::Server.run binding

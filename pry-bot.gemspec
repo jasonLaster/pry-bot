@@ -21,5 +21,5 @@ Gem::Specification.new do |s|
 
   s.add_dependency "pry",  "~> 0.9"
 
-  s.executables = ["pry-bot"]
+  s.executables = %w(pry-bot pry-bot-demo)
 end
