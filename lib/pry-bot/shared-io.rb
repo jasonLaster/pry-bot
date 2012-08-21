@@ -10,10 +10,14 @@ module PryBot
       @output_proxy = PryBot::StringIOProxy.new(@output)
     end
 
-    def pry_eval(string)
-      @input_proxy << string
-      sleep 0.1
+    def readlines
       @output_proxy.readlines
+    end
+
+    def peval(string, &cb)
+      @input_proxy << string
+      cb.call
+      return true
     end
   end
 end

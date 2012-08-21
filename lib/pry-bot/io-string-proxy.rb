@@ -33,7 +33,7 @@ module PryBot
 
     def puts(*lines)
       lines.map! {|line| line.end_with?("\n") ? line : line+"\n" }
-      # @stdout.puts "STDOUT: #{lines.inspect}"
+      @stdout.puts ": #{lines.inspect}"
       lines.each { |l| self << l}
     end
 
